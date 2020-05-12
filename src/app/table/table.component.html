@@ -1,0 +1,23 @@
+<table>
+    <tr>
+        <th>sl no</th>
+        <th>name</th>
+        <th>gender</th>
+        <th>sl no odd/even</th>
+    </tr>
+    <tr *ngFor="let a of arr;index as i">
+       <td>{{i+1}}</td>
+       <td>{{a.names}}</td>
+       <td>{{a.gender}}</td>
+       <td *ngIf="i%2 else q">even</td>
+       <ng-template #q>odd</ng-template>
+    </tr>
+    <tr *ngFor="let a of arr;index as i">
+       <p *ngIf="a.gender==g">
+           <td>{{a.names}}</td>
+        <td>{{a.gender}}</td></p> 
+    </tr>
+    <tr >
+       
+    </tr>
+</table>

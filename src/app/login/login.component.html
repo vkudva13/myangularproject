@@ -1,0 +1,35 @@
+<div class="box">
+    <div class="login">
+        <!-- {{form.value|json}} -->
+        <form [formGroup]="form" (ngSubmit)="onLogin(form.value)">
+            <div class="form-group">
+
+                <input type="email" formControlName="email" placeholder="email"><br>
+            </div>
+            <div class="errors" *ngIf="email.errors  && email.touched">
+                <span *ngIf="email.errors.required">
+                    This field can't be empty
+                </span>
+                <span *ngIf="email.errors.email">
+                    Not an email
+                </span>
+             </div>
+            <div class="form-group">
+
+                <input type="text" formControlName="pwd" placeholder="password"><br>
+            </div>
+            <div class="errors" *ngIf="pwd.errors && pwd.touched">
+                <span *ngIf="pwd.errors.required ">
+                    This field can't be empty
+                </span>
+                <span *ngIf="pwd.errors.minlength">
+                    Not enough characters
+                </span>
+        </div>
+            <button >Login</button>
+        </form>
+        <a routerLink="/signup">new user?</a>
+    </div>
+    
+</div>
+<!-- <h1>ello</h1> -->

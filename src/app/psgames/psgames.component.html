@@ -1,0 +1,11 @@
+<div class="psgames" *ngFor="let game of psgames">
+    <img [src]="game.url" alt="" (click)="changegame(game)"><br>
+    <a>{{game.name}}</a>
+    
+</div>
+<div class="sgame">
+    <img [src]="psgame.url" alt=""><br>
+    <h2>{{psgame.name}}</h2><br>
+    <h3>{{psgame.price|currency:"INR":symbol}}</h3><br>
+    <h4>Release:{{psgame.Release | date:mediumDate}}</h4>
+</div>

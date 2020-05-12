@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}div{
+    margin: 2em;
+    background-color:rgb(97, 29, 161);
+    height: 80em;
+}
+p{
+    margin:2em;
+}
+#about{
+    margin: 0em 2em;
+    font-size:6em;
+}

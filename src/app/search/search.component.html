@@ -1,0 +1,9 @@
+<div class="show">
+    <input type="text" (keyup)="getsearch(search.value)" placeholder="Search" #search>
+
+</div>
+<div class="show gm" *ngFor="let item of items;index as i">
+    <a >{{item.Title}}</a><br>
+    <img [src]="item.Poster" alt=""><br>
+    <a>{{item.Year}}</a>
+</div>

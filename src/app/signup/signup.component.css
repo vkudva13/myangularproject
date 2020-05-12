@@ -1,0 +1,64 @@
+.errors
+{
+    color: #de071c;
+    font-size: 1em;
+    margin-top: 0;
+}
+.box{
+    text-align: center;
+}
+.signup
+{
+    width:fit-content;
+    margin: auto;
+    padding: 1em;
+    text-align: left;
+}
+button{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 0.15em 0.25em;
+    font-size: 2em;
+    margin: 0.5em 0 0.15em;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}
+.form-group
+{
+}
+input{
+    font-size: 1.75em;
+    font-weight: 400;
+    border-radius: 4px;
+    border:1px solid #7e7e7e;
+    height: 1em;
+    padding: 0.25em;
+    margin: 0.45em 0 0;
+}
+
+input:focus{
+    border-color:  lightseagreen;
+    box-shadow: 0 0 0 .17rem rgb(131, 192, 253,0.5)
+    
+}
+input::placeholder{
+    opacity: 0.75;
+    font-weight: 400;
+    vertical-align: text-top;
+}
+a{
+    margin-left: 0.25em;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}

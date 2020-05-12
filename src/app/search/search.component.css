@@ -1,0 +1,26 @@
+input{
+    border:2px blueviolet solid;
+    width: 500px;
+    height: 40px;
+
+
+}
+.gm{
+    border: 2px solid red;
+    border-radius: 2px;
+    width: fit-content;
+    margin-left: 39%;
+}
+input::placeholder{
+    font-size: large;
+    padding-left: 50px;
+}
+input:hover{
+    border:2px rgb(161, 100, 218) solid;
+}
+.show{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}

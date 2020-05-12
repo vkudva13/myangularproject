@@ -1,0 +1,61 @@
+<!-- <div>
+    <input type="text" placeholder="username" [(ngModel)]="title"> <br>
+    <input type="text" placeholder="password"> <br>
+    <input type="email" placeholder="email"><br>
+    <input type="number" placeholder="phone number"><br>
+    <button (click)="res()" [disabled]="title==''">submit</button>
+    <br>
+
+</div>
+{{81|sqrt}}
+<p style="color: red;">
+    child
+    {{somedata}}
+    <button (click)="disp()">send</button>
+</p> -->
+
+<!-- <form #fdata="ngForm" (ngSubmit)="onsubmit(fdata.value)"></form>
+<div class="cform" >
+    <input type="text" placeholder="username" required min="5" name="user" #user="ngModel" [(ngModel)]="sdata.user" [class.is-invalid]="user.invalid && user.touched" > <br>
+    <div class="usererror" *ngIf="users.errors">
+        <a *ngIf="users.errors.required">This field is mandatory</a>
+         <a *ngIf="users.errors.pattern">This field is mandatory</a> 
+
+    </div>
+    <input type="number" placeholder="phone number" #phone="ngModel"  [(ngModel)]="sdata.phone"><br>
+    <input type="radio" name="gender" value="male" [(ngModel)]="sdata.gender"> 
+    <input type="checkbox" #terms=ngModel [(ngModel)]="sdata.terms">Terms
+ </div> -->
+ <div class="formbody">
+     {{form.value|json}}
+    <form [formGroup]="form" (ngSubmit)="onsubmit(form.value)">
+<div class="form-group" >
+    <input type="text" placeholder="username" formControlName="user" [class.is-invalid]="user.invalid &&  user.touched"> <br>
+</div>
+<div class="err" *ngIf="user.errors">
+    <a *ngIf="user.errors.required">
+        This field is mandatory
+    </a>
+</div>
+<div class="form-group" >
+    <input type="number" placeholder="phone number" formControlName="phone"><br>
+</div>
+<div class="err" *ngIf="phone.errors">
+    <a *ngIf="phone.errors.required">
+        This field is mandatory
+    </a>
+</div>
+<div class="addgroup" formGroupName="address" >
+    <div class="form-group" >
+        <input type="text" name="city" formControlName="city" >
+    </div>
+<div class="form-group" >
+    <input type="text" name="state" formControlName="state" >
+</div>
+<div class="form-group" >
+    <input type="number" formControlName="pin">
+</div>
+</div>
+
+</form >
+</div> 

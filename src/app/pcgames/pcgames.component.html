@@ -1,0 +1,6 @@
+<div class="pcgames" *ngFor="let game of pcgames">
+<img [src]="game.url" alt="" (click)="select(game)"><br>
+<a>{{game.name}}</a>
+<h3>{{game.price|currency:"INR":symbol}}</h3>
+    <h4>Release:{{game.Release | date:"mediumDate"}}</h4>
+</div>

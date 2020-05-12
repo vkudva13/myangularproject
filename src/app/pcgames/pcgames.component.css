@@ -1,0 +1,27 @@
+img{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid violet;
+    border-radius: 4px;
+    margin: 1em;
+    transition: transform 0.25s;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.01);
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: bold;
+    color:white;
+}
+.pcgames{
+    display: inline-block;
+    margin: 1em;
+    border: 2px solid blueviolet;
+    background-color: rgb(97, 29, 161);
+    width: 23em;
+    text-align: center;
+    padding-bottom: 1em;
+}
